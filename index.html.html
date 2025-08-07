@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Koushik's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header class="navbar">
+    <div class="logo">Koushik Siripuri</div>
+    <nav class="center-nav">
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="resume-button">
+      <a href="resume.pdf" download 
+    target="_blank"> 
+  <button style="padding: 10px 20px; background-color: #f00; color: white; border: none; border-radius: 5px; cursor: pointer;"> 
+    Download Resume </button></a>
+    </div>
+  </header>
+
+  <main class="main-section" data-aos="fade-up">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Hello! I'm Koushik Siripuri, a developer passionate about Python, web dev, and AI.</p>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <footer style="text-align: center; padding: 20px; margin-top: 50px; background: #111; color: #ccc; font-size: 14px;">
+  <p>Made with ❤️ by Koushik Siripuri</p>
+
+  <div style="margin: 10px 0;">
+    <a href="https://github.com/koushiksiripuri20" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="30" height="30" alt="GitHub">
+    </a>
+    <a href="https://www.linkedin.com/in/koushiksiripuri" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="30" height="30" alt="LinkedIn">
+    </a>
+    <a href="https://www.instagram.com/__.kshk" target="_blank" style="margin: 0 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="30" height="30" alt="Instagram">
+    </a>
+  </div>
+
+  <p>
+    <a href="https://pages.github.com/" target="_blank">
+      <img src="https://img.shields.io/badge/Hosted%20by-GitHub%20Pages-121013?logo=github&style=for-the-badge" alt="Hosted by GitHub Pages">
+    </a>
+  </p>
+
+  <p>© <span id="year"></span> Koushik Siripuri</p>
+
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" style="margin-top: 10px; padding: 8px 12px; background: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    ⬆ Back to Top
+  </button>
+</footer>
+
+<script>
+  // Automatically update the copyright year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
+
